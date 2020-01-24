@@ -179,6 +179,10 @@ this.newItem='';
                 playersRef.on("value", function(snapshot) {
 
                       var length=Object.keys(snapshot.val()).length;
+                          
+                          console.log("yo yo");
+                          console.log(Object.keys(snapshot.val()));
+
 
                           console.log("length is "+length);
                         for(var i=0;i<length;i++)
@@ -315,7 +319,7 @@ this.newItem='';
 
           const inputIndex=this.inputs.indexOf(input);
           this.inputs.splice(inputIndex,1);
-          location.reload();
+          // location.reload();
 
         }
 

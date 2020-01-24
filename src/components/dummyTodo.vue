@@ -1,6 +1,6 @@
     <template>
      <div>
-     <template v-if="user.loggedIn">
+      <template v-if="user.loggedIn">
                 <h1>Welcome {{user.data.displayName}}{{user.uid}}</h1>
               </template>
          <h1 class="time">{{time()}}</h1>

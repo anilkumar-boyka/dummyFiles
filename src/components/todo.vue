@@ -174,6 +174,9 @@ this.newItem='';
               //remove logic starts here
 
                 playersRef.on("value", function(snapshot) {
+                  console.log("yo yo yo...");
+
+                  console.log(Object.values(snapshot.val())[2]);
 
                       var length=Object.keys(snapshot.val()).length;
 
@@ -312,7 +315,7 @@ this.newItem='';
 
           const inputIndex=this.inputs.indexOf(input);
           this.inputs.splice(inputIndex,1);
-          location.reload();
+          // location.reload();
 
         }
 
